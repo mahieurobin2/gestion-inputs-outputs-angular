@@ -1,0 +1,5 @@
+<app-child></app-child>
+<router-outlet></router-outlet>
+<app-child [ContentFromInput]="contentToSendToChild"(EventToSendToApp)="processReceivedEvent($event)">
+</app-child>
+{{contentReceivedFromChild}}
